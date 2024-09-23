@@ -9,7 +9,7 @@ describe('Runs tests for the demoqa book store search functionality https://demo
 
     beforeEach(() => {
     })
-
+    
     it('Searches for a specific book with full title', function (){
       cy.intercept('GET', '/BookStore/v1/Books').as('getBooks');
       cy.visit('https://demoqa.com/books');
